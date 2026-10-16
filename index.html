@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="Portfolio of Abishek Madesh, a Computer Science student at The College of New Jersey interested in software development, systems, and cybersecurity.">
+  <title>Abishek Madesh | Software & Systems</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Abishek Madesh home"><span class="brand-mark">AM<span class="brand-dot">.</span></span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-github" href="https://github.com/AbishekMadesh" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Computer Science · TCNJ · Class of 2028</div>
+        <h1 id="hero-title">Hi, I'm <span>Abishek.</span><br>I build things<br>that <em>work.</em></h1>
+        <p class="hero-description">Computer Science student focused on software development, operating systems, and cybersecurity. I like turning technical problems into thoughtful, working solutions.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="mailto:madesha1@tcnj.edu">Get in touch <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-links" aria-label="Social links">
+          <a href="https://github.com/AbishekMadesh" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <span aria-hidden="true">/</span>
+          <a href="https://www.linkedin.com/in/abishek-madesh" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <span aria-hidden="true">/</span>
+          <a href="mailto:madesha1@tcnj.edu">Email <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="My development focus: code, systems, and security">
+        <div class="visual-top"><span class="visual-kicker">CURRENT FOCUS</span><span class="visual-corner" aria-hidden="true">↗</span></div>
+        <div class="visual-main">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="focus-icon" aria-hidden="true">{ }</div>
+          <div class="visual-caption">Build. Test.<br><strong>Understand.</strong></div>
+        </div>
+        <div class="visual-footer"><span><span class="mini-dot" aria-hidden="true"></span> Software development</span><span>Systems & security</span></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker"><span class="section-index">01 /</span> ABOUT</p>
+          <h2 id="about-title">Curious about how<br><span>everything fits together.</span></h2>
+        </div>
+        <div class="about-content">
+          <p>I'm pursuing a B.S. in Computer Science at <strong>The College of New Jersey</strong>, with a cybersecurity specialization and an interest in the practical side of building software.</p>
+          <p>I've worked with Python-based AI tools, developed systems programming projects in C, and maintained a GitHub-hosted website as part of the DIGIT.all student organization.</p>
+          <div class="skill-area">
+            <h3>What I work with</h3>
+            <div class="skills" aria-label="Technical skills"><span>Python</span><span>Java</span><span>C / C++</span><span>SQL</span><span>Linux / Unix</span><span>Git & GitHub</span><span>POSIX Threads</span><span>LangChain</span><span>MATLAB</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker"><span class="section-index">02 /</span> SELECTED WORK</p><h2 id="projects-title">Projects worth<br><span>looking at.</span></h2></div>
+          <p>Coursework and hands-on work that helped me think about systems, concurrency, and data.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-featured">
+            <div class="project-card-top"><span class="project-number">PROJECT / 01</span><span class="project-icon" aria-hidden="true">⌘</span></div>
+            <h3>Unix Shell</h3>
+            <p>Built a command-line shell in C with command execution, process creation, history, I/O redirection, pipelines, and background execution using Unix system calls.</p>
+            <div class="project-bottom"><div class="project-tags"><span>C</span><span>Linux / Unix</span><span>Processes</span></div><span class="repo-note">Code not publicly linked</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-top"><span class="project-number">PROJECT / 02</span><span class="project-icon" aria-hidden="true">◈</span></div>
+            <h3>Multithreaded<br>Sudoku Validator</h3>
+            <p>Collaborated on a Sudoku validator with 11-thread and 27-thread modes. Tested valid and invalid boards and compared execution times with <code>clock_gettime()</code>.</p>
+            <div class="project-bottom"><div class="project-tags"><span>C</span><span>POSIX Threads</span><span>Concurrency</span></div><span class="repo-note">Team academic project</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-top"><span class="project-number">PROJECT / 03</span><span class="project-icon" aria-hidden="true">◎</span></div>
+            <h3>USGS Earthquake<br>Data Visualizer</h3>
+            <p>Organized USGS earthquake data in a binary search tree keyed by magnitude, then used recursive tree operations and BRIDGES visualizations to explore the dataset.</p>
+            <div class="project-bottom"><div class="project-tags"><span>C++</span><span>Binary Search Trees</span><span>BRIDGES</span></div><span class="repo-note">Code not publicly linked</span></div>
+          </article>
+        </div>
+        <p class="projects-footnote">Some academic repositories are intentionally not public. Project descriptions reflect the work completed, and code can be discussed during interviews.</p>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience" aria-labelledby="experience-title">
+      <div class="container experience-grid">
+        <div><p class="section-kicker"><span class="section-index">03 /</span> EXPERIENCE</p><h2 id="experience-title">Learning by<br><span>doing.</span></h2></div>
+        <div class="timeline">
+          <article class="timeline-entry"><div class="timeline-meta">FEB 2026 <span aria-hidden="true">·</span> DEVELOPMENT</div><h3>Associate Developer <span>@ QuantumedgeGenAI LLC</span></h3><p>Contributed Python code for a retirement-software chatbot involving LangChain agents and shared data, and tested and debugged chatbot components with the development team.</p></article>
+          <article class="timeline-entry"><div class="timeline-meta">FALL 2025 — PRESENT <span aria-hidden="true">·</span> LEADERSHIP</div><h3>Webmaster & E-Board Member <span>@ DIGIT.all</span></h3><p>Maintain the organization's GitHub-hosted website and collaborate on a replacement site for the Diversity & Inclusion Group in Tech for All at TCNJ.</p><a class="inline-link" href="https://github.com/AbishekMadesh/TCNJDIGITall.github.io" target="_blank" rel="noopener noreferrer">View public website repository <span aria-hidden="true">↗</span></a></article>
+          <article class="timeline-entry"><div class="timeline-meta">2024–2025 <span aria-hidden="true">·</span> TEACHING</div><h3>Coaching & Robotics Tutoring</h3><p>Coached youth tennis lessons and taught LEGO EV3 programming, helping students learn new skills and troubleshoot problems.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-content"><p class="section-kicker"><span class="section-index">04 /</span> LET'S CONNECT</p><h2 id="contact-title">Have something<br><span>worth building?</span></h2><p>I'm interested in internship opportunities and conversations about software, systems, and security.</p><a class="button button-primary" href="mailto:madesha1@tcnj.edu?subject=Portfolio%20Inquiry">Email me <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-shell"><span>© <span id="year">2026</span> Abishek Madesh</span><span>Built with HTML, CSS & a little JavaScript.</span><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
