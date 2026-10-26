@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="A team-built Sudoku solution checker that compares different POSIX threading configurations.">
+  <title>Multithreaded Sudoku Validator | Abishek Madesh</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="../index.html" aria-label="Abishek Madesh home"><span class="brand-mark">AM<span class="brand-dot">.</span></span></a>
+      <nav class="nav-links" aria-label="Primary navigation"><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#contact">Contact</a></nav>
+      <a class="nav-github" href="https://github.com/AbishekMadesh" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main class="detail-main" id="main">
+    <section class="container detail-hero" aria-labelledby="detail-title">
+      <a class="detail-back" href="../index.html#projects"><span aria-hidden="true">←</span> Back to all projects</a>
+      <p class="section-kicker"><span class="section-index">PROJECT 02 /</span> SELECTED WORK</p>
+      <h1 id="detail-title">Multithreaded Sudoku Validator</h1>
+      <p class="detail-summary">A team-built Sudoku solution checker that compares different POSIX threading configurations.</p>
+      <div class="skills detail-tags" aria-label="Technology used"><span>C</span><span>POSIX Threads</span><span>Concurrency</span></div>
+    </section>
+    <div class="container detail-layout">
+      <article class="detail-article">
+        <h2>Overview</h2>
+        <p>I worked with a class partner on a C program that validates a completed Sudoku board using POSIX threads. We designed and tested two configurations to compare different ways of dividing validation work.</p>
+        <h2>What it does</h2>
+        <ul><li>11-thread mode: one thread checks all rows, one checks all columns, and nine check the 3×3 boxes.</li>
+          <li>27-thread mode: nine threads each check rows, nine check columns, and nine check boxes.</li>
+          <li>Tested both correct Sudoku solutions and boards containing duplicate values.</li>
+          <li>Measured wall-clock execution time using clock_gettime() with CLOCK_MONOTONIC to compare the configurations.</li></ul>
+        <h2>Technical experience</h2>
+        <p>This project helped me work with creating and coordinating pthreads, splitting a validation task into independent checks, and reasoning about the overhead of multithreaded execution.</p>
+      </article>
+      <aside class="detail-side">
+        <h3>About the code</h3>
+        <p>This was a collaborative academic project. The code is not published here.</p>
+        <a class="button button-primary" href="../index.html#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-shell"><span>© <span id="year">2026</span> Abishek Madesh</span><span>Built with HTML, CSS &amp; a little JavaScript.</span><a href="../index.html#projects">All projects ↑</a></div></footer>
+</body>
+</html>
