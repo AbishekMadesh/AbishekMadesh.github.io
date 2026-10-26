@@ -40,3 +40,11 @@
 .detail-side p{color:#bdcddd;font-size:13px;line-height:1.8;margin:0 0 18px}
 .detail-side .button{width:100%}
 @media(max-width:700px){.detail-hero{padding-block:55px 40px}.detail-layout{grid-template-columns:1fr;gap:28px;padding-block:35px 75px}.contact-actions{flex-direction:column;align-items:center}.contact-actions .button{width:min(100%,300px)}}
+
+
+/* The Current Focus card is a working link to the projects section. */
+.hero-visual{color:var(--text);cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.hero-visual:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 34px 95px #0006}
+.hero-visual:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.visual-action{color:var(--accent);font-weight:800;letter-spacing:.02em}
+@media(prefers-reduced-motion:reduce){.hero-visual{transition:none}.hero-visual:hover{transform:none}}
