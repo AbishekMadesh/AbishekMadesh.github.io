@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+<title id="title">Sudoku validator benchmark</title><desc id="desc">11-thread mode averaged 0.322 milliseconds and 27-thread mode averaged 0.680 milliseconds, measured across 100 runs of each mode on the TCNJ Linux VM.</desc>
+<rect width="900" height="500" rx="20" fill="#102036"/>
+<text x="45" y="65" fill="#8ff0d6" font-size="16" font-family="Arial, sans-serif" letter-spacing="3">MEASURED RUNTIME</text>
+<text x="45" y="105" fill="#f2f7fb" font-size="30" font-weight="bold" font-family="Arial, sans-serif">11 threads vs. 27 threads</text>
+<text x="45" y="136" fill="#adc2d2" font-size="16" font-family="Arial, sans-serif">100 runs per mode · TCNJ Linux VM · lower is faster</text>
+<line x1="245" x2="805" y1="198" y2="198" stroke="#365068"/><line x1="245" x2="805" y1="294" y2="294" stroke="#365068"/>
+<text x="45" y="235" font-family="Arial, sans-serif" font-size="19" fill="#f2f7fb">Mode 1 · 11 threads</text>
+<rect x="245" y="210" width="232" height="40" rx="6" fill="#8ff0d6"/>
+<text x="496" y="237" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#8ff0d6">0.322 ms</text>
+<text x="45" y="330" font-family="Arial, sans-serif" font-size="19" fill="#f2f7fb">Mode 2 · 27 threads</text>
+<rect x="245" y="305" width="489" height="40" rx="6" fill="#7688e0"/>
+<text x="750" y="333" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#cad4ff">0.680 ms</text>
+<rect x="45" y="387" width="810" height="1" fill="#365068"/>
+<text x="45" y="426" fill="#f2f7fb" font-family="Arial, sans-serif" font-weight="bold" font-size="21">11-thread mode finished faster in 99 of 100 pairs</text>
+<text x="45" y="456" fill="#a8bdcf" font-family="Arial, sans-serif" font-size="15">Means from submitted Project 2 report; measurements include thread creation and joining.</text>
+</svg>
