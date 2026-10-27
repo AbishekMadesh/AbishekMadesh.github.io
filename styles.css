@@ -48,3 +48,20 @@
 .hero-visual:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 .visual-action{color:var(--accent);font-weight:800;letter-spacing:.02em}
 @media(prefers-reduced-motion:reduce){.hero-visual{transition:none}.hero-visual:hover{transform:none}}
+
+
+/* Source-backed project evidence */
+.evidence-figure{margin:22px 0 30px;padding:0}
+.evidence-image{display:block;width:100%;height:auto;max-width:100%;border:1px solid #2e5265;border-radius:11px;background:#102036}
+.evidence-figure figcaption{margin-top:11px;color:#91a9ba;font-size:12px;line-height:1.7}
+.terminal-frame{background:#091421;border:1px solid #2e5265;border-radius:11px;overflow:hidden}
+.terminal-top{display:flex;gap:16px;align-items:center;padding:12px 18px;border-bottom:1px solid #263c4e;color:#91a9bb;font-size:11px;letter-spacing:.03em}
+.terminal-top>span:first-child{color:#8ff0d6;font-size:10px;letter-spacing:5px;white-space:nowrap}
+.terminal-frame pre{overflow-x:auto;padding:19px 21px;margin:0;font-size:13px;line-height:1.9;color:#b8f3df;font-family:Consolas,'SFMono-Regular',Menlo,monospace}
+.terminal-frame code{font-family:inherit;white-space:pre}
+.detail-article strong{color:#f2f7fb}
+.result-pills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:26px 0 34px}
+.result-pills>div{background:#152c3c;border:1px solid #315267;border-radius:9px;padding:17px 13px}
+.result-pills strong{display:block;font-size:22px;color:#8ff0d6;font-weight:700}
+.result-pills span{display:block;margin-top:5px;font-size:11px;color:#adc5d1;line-height:1.45}
+@media(max-width:700px){.result-pills{grid-template-columns:1fr;gap:8px}.result-pills>div{padding:12px 16px}.terminal-frame pre{font-size:12px}}
