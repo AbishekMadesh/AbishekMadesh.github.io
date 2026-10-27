@@ -35,6 +35,13 @@
           <li>Added sample products, customers, orders, and quantities to test the structure.</li>
           <li>Used joins and an aggregated VIEW_ORDER_LIST view to calculate order item counts and totals.</li>
           <li>Wrote Python SQL statements for listing, inserting, editing, updating, and deleting products, customers, orders, and order items.</li></ul>
+        <h2>Database design</h2>
+        <p>The diagram below reflects the table and view definitions in my CSC 315 <code>orders.sql</code> file. It is a schema illustration based on the submitted SQL, not a screenshot of an independently deployed application.</p>
+        <figure class="evidence-figure">
+          <img class="evidence-image" src="../assets/order-data-model.svg" alt="Four-table relational data model: Customer is linked to Order, Order is linked to Order Item, and Product is linked to Order Item. An SQL view summarizes order totals." loading="lazy" width="960" height="600">
+          <figcaption>Data relationships drawn from the actual SQL table definitions. The <code>VIEW_ORDER_LIST</code> view aggregates order quantities and monetary totals.</figcaption>
+        </figure>
+        <p>I also located an original screenshot of the provided Flask application's home page running at <code>127.0.0.1:5000</code>, showing Products, Customers, and Orders navigation. It establishes that the local interface opened; I am not treating it as proof that every operation passed testing.</p>
         <h2>What I learned</h2>
         <p>The important part of this project was connecting relational design with the operations an application needs. I worked with table relationships, CRUD queries, joins, and a summary view instead of treating each SQL statement as a stand-alone exercise.</p>
       </article>
