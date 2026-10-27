@@ -35,6 +35,15 @@
           <li>27-thread mode: nine threads each check rows, nine check columns, and nine check boxes.</li>
           <li>Tested both correct Sudoku solutions and boards containing duplicate values.</li>
           <li>Measured wall-clock execution time using clock_gettime() with CLOCK_MONOTONIC to compare the configurations.</li></ul>
+        <h2>Measured results</h2>
+        <p>Our submitted project report contains a paired experiment of <strong>100 runs of each threading mode</strong> on the TCNJ Linux VM. Both modes validated the tested boards correctly.</p>
+        <figure class="evidence-figure">
+          <img class="evidence-image" src="../assets/sudoku-benchmark.svg" alt="Measured average run time: 11 threads, 0.322 milliseconds; 27 threads, 0.680 milliseconds. 100 tests each, 11 threads faster in 99 of 100 trial pairs." loading="lazy" width="900" height="500">
+          <figcaption>Chart recreated from real results in the submitted report, not a screenshot or a new benchmark. Measurements cover thread creation through joining; they exclude reading and printing the board.</figcaption>
+        </figure>
+        <div class="result-pills"><div><strong>0.322 ms</strong><span>11-thread mean</span></div><div><strong>0.680 ms</strong><span>27-thread mean</span></div><div><strong>99 / 100</strong><span>Pairs faster with 11 threads</span></div></div>
+        <h2>Validation checks</h2>
+        <p>The documented test runs produced <code>SOLUTION: YES</code> for a valid board and <code>SOLUTION: NO</code> for a board with a repeated number. In the timing experiment, the 27-thread configuration averaged about 2.11 times the runtime of the 11-thread configuration, consistent with extra threading overhead on a small task.</p>
         <h2>Technical experience</h2>
         <p>This project helped me work with creating and coordinating pthreads, splitting a validation task into independent checks, and reasoning about the overhead of multithreaded execution.</p>
       </article>
