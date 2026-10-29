@@ -65,3 +65,54 @@
 .result-pills strong{display:block;font-size:22px;color:#8ff0d6;font-weight:700}
 .result-pills span{display:block;margin-top:5px;font-size:11px;color:#adc5d1;line-height:1.45}
 @media(max-width:700px){.result-pills{grid-template-columns:1fr;gap:8px}.result-pills>div{padding:12px 16px}.terminal-frame pre{font-size:12px}}
+
+
+/* Seventh project: full-width featured card instead of a lonely third-row item */
+.project-card.project-showcase{grid-column:1/-1;min-height:260px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(210px,.6fr);align-items:center;gap:38px;background:linear-gradient(120deg,#142f3f 0%,#11273b 55%,#101d2f 100%)}
+.project-showcase .project-card-top{margin-bottom:15px}
+.project-showcase h3{font-size:28px}
+.project-showcase h3 span{color:#b6c8d8;font-weight:400;font-size:20px}
+.project-showcase p{max-width:610px;margin-bottom:19px}
+.project-showcase .repo-note{margin-top:10px}
+.showcase-label{margin-left:12px;color:#8ff0d6;font-size:10px;letter-spacing:.08em}
+.showcase-preview{justify-self:center;text-align:center}
+.life-mini-board{display:grid;grid-template-columns:repeat(10,14px);gap:4px;padding:15px;border:1px solid #355468;border-radius:12px;background:#0a1929;box-shadow:0 20px 42px #0004}
+.life-mini-board span{width:14px;height:14px;border:1px solid #28445a;border-radius:2px;background:#12273b}
+.life-mini-board .life-on{background:#8ff0d6;border-color:#8ff0d6;box-shadow:0 0 7px #8ff0d64a}
+.showcase-legend{display:block;margin-top:12px;color:#95b0c0;font-size:10px;letter-spacing:.09em;font-weight:700}
+
+/* Small interactive browser adaptation on the project detail page */
+.life-lab-section{padding-bottom:48px}
+.life-demo{border:1px solid #365569;border-radius:15px;background:linear-gradient(145deg,#14283a 0%,#0f1d2f 100%);padding:29px}
+.life-demo-heading{display:flex;align-items:start;justify-content:space-between;gap:30px;margin-bottom:29px}
+.life-demo-heading h2{font-family:var(--serif);font-size:30px;line-height:1.25;margin:0}
+.life-demo-heading .section-kicker{margin-bottom:10px}
+.life-demo-heading>p{max-width:355px;font-size:12px;line-height:1.7;color:#bdcbd9;margin:0}
+.life-demo-heading strong{color:#e6f1f6}
+.life-demo-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,.7fr);gap:33px;align-items:start}
+.life-demo-board-wrap{max-width:540px;width:100%;margin-inline:auto}
+#life-canvas{display:block;width:100%;height:auto;aspect-ratio:1;border:1px solid #36586e;border-radius:8px;background:#0e1b2c;cursor:crosshair;touch-action:manipulation}
+.life-controls{display:flex;flex-direction:column;gap:12px;min-width:0}
+.life-controls label{color:#c6dce2;font-size:12px;font-weight:800;letter-spacing:.06em}
+.life-controls select{width:100%;border:1px solid #476176;background:#101c2d;color:#f3f9fb;padding:12px 15px;font-family:var(--sans);font-size:14px;border-radius:7px}
+.life-controls select:focus-visible,.life-actions button:focus-visible{outline:3px solid #8ff0d6;outline-offset:3px}
+.life-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:13px 0}
+.life-stat-grid>div{border:1px solid #38566b;border-radius:8px;background:#132a3d;padding:14px}
+.life-stat-grid span{display:block;font-size:11px;color:#a0b8c7;margin-bottom:7px}
+.life-stat-grid strong{display:block;font-size:27px;color:#8ff0d6;line-height:1.2}
+.life-actions{display:flex;flex-wrap:wrap;gap:9px}
+.life-actions .button{font-family:var(--sans);cursor:pointer;padding:10px 15px}
+.life-help{color:#aec1cc;font-size:12px;line-height:1.8;margin:10px 0 0}
+.life-feedback{color:#8ff0d6;font-size:12px;line-height:1.6;min-height:18px;margin:2px 0}
+@media(max-width:980px){.project-card.project-showcase{grid-template-columns:minmax(0,1fr) 200px;gap:20px}}
+@media(max-width:700px){
+  .project-card.project-showcase{grid-column:auto;grid-template-columns:1fr;padding:25px;gap:28px}
+  .project-showcase h3{font-size:25px}
+  .project-showcase h3 span{display:block;font-size:18px;margin-top:4px}
+  .showcase-preview{display:none}
+  .life-demo{padding:19px}
+  .life-demo-heading{display:block}
+  .life-demo-heading>p{max-width:none;margin-top:13px}
+  .life-demo-layout{grid-template-columns:1fr;gap:25px}
+  .life-demo-heading h2{font-size:26px}
+}
